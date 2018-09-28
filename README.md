@@ -16,3 +16,11 @@ This project will be built with the following technologies.
 3. MongoDB Database
 4. HTML + CSS + Javascript + Jquery + JSON
 5. Travis CI
+
+**WIREFRAME FOR MY PROJECT**
+![homepage](https://user-images.githubusercontent.com/26542167/46218462-93cdeb00-c33c-11e8-8f01-f6fd5b1793ee.png)
+
+![book_appointment](https://user-images.githubusercontent.com/26542167/46218463-94668180-c33c-11e8-9977-02040203d0ba.png)
+
+![booking_details](https://user-images.githubusercontent.com/26542167/46218464-94668180-c33c-11e8-95e2-9a2e110dfa70.png)
+
