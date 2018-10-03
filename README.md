@@ -1,4 +1,4 @@
-# Hospital Appointment Booking Form
+# Hospital Appointment Booking Application
 **Link To Trello Board**: <https://trello.com/invite/b/GsmeClQ5/53ad26c52b1fb3b4a0f9a66d87603972/hospital-appointment-booking-form-project>
 
 This Repository is for the design of a simple hospital appointment booking form, for patients who want to book an appointment to see their doctor. 
