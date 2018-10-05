@@ -3,6 +3,11 @@ import mysql.connector as mariadb
 app = Flask(__name__)
 
 
+@app.route('/')
+def index():
+    return render_template('home.html')
+
+
 @app.route('/act', methods=['GET', 'POST'])
 def act():
     if(request.method == 'POST'):
