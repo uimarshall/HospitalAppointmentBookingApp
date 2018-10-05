@@ -16,6 +16,8 @@ This project will be built with the following technologies.
 3. MongoDB Database
 4. HTML + CSS + Javascript + Jquery + JSON
 5. Travis CI
+
+
 ##How To Run My Application
 1. Clone the repo to your local machine
 2. Navigate or cd to the _HospitalAppointmentBookingApplication_ directory
