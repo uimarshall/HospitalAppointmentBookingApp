@@ -18,7 +18,7 @@ This project will be built with the following technologies.
 5. Travis CI
 
 
-##How To Run My Application
+**How To Run My Application**
 1. Clone the repo to your local machine
 2. Navigate or cd to the _HospitalAppointmentBookingApplication_ directory
 3. In your command line type _python app.py_
