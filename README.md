@@ -17,6 +17,14 @@ This project will be built with the following technologies.
 4. HTML + CSS + Javascript + Jquery + JSON
 5. Travis CI
 
+
+**How To Run My Application**
+1. Clone the repo to your local machine
+2. Navigate or cd to the _HospitalAppointmentBookingApplication_ directory
+3. In your command line type _python app.py_
+4. go to your browser and type the address that is displayed or **localhost:5000**
+5. it will display *Hello World*
+
 **WIREFRAME FOR MY PROJECT**
 ![homepage](https://user-images.githubusercontent.com/26542167/46218462-93cdeb00-c33c-11e8-8f01-f6fd5b1793ee.png)
 
