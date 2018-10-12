@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="jumbotron text-center">
+    <h1>Welcome To Ebony Hospital</h1>
+    <p>This is our hospital booking Platform, your health is our utmost concern.</p>
+    <p>Book Your Appointment Below</p>
+  </div>
+
+  <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+
+          <form action="/act" method="POST">
+            <div class="form-group">
+              <label for="fname">Name</label>
+              <input type="text" class="form-control" name= "name" id="fname" placeholder="Jane Doe">
+            </div>
+
+            <div class="form-group">
+              <label for="booktime">Time</label>
+                <select id="country" name="mytime" class="form-control">
+                  {# ensure no space btw the in what u put in the value field #}
+                  <option value="09:00am-10:00am">09:00am - 10:00am</option>
+                  <option value="10:00am-11:00am">10:00am - 11:00am</option>
+                  <option value="11:00am-12:00pm">11:00am - 12:00pm</option>
+                  <option value="12:00pm-01:00pm">12:00pm - 01:00pm</option>
+                  <option value="01:00pm-02:00pm">01:00pm - 02:00pm</option>
+                  <option value="01:00pm-02:00pm">02:00pm - 03:00pm</option>
+                </select>
+            </div>
+            <div class="form-group">
+              <label for="birthdate">Date</label>
+              <input type="date" class="form-control" name= "mydate" id="exampleInputDate" placeholder="date">
+            </div>
+            <div class="form-group">
+              <label for="patientsSymptoms">Symptoms</label>
+              <textarea class="form-control" rows="3" name="symptoms"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+{% endblock %}

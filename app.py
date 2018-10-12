@@ -8,6 +8,24 @@ def index():
     return render_template('home.html')
 
 
+@app.route('/about')
+def about():
+
+    return render_template('about.html')
+
+
+@app.route('/bookingdetails')
+def bookingdetails():
+
+    return render_template('bookingdetails.html')
+
+
+@app.route('/bookings')
+def bookings():
+
+    return render_template('bookings.html')
+
+
 @app.route('/act', methods=['GET', 'POST'])
 def act():
     if(request.method == 'POST'):
