@@ -46,7 +46,7 @@ def act():
             msg = "Thanks for Booking Your Data Has Been Stored"
             return render_template('status.html', msg=msg)
         except:
-            return "Database connection error"
+            return "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ipsum laudantium necessitatibus quas, commodi vitae, in impedit sit exercitationem ullam, ratione tempora maiores. Veniam corporis, nesciunt, vel beatae provident minus!"
 
 
 if __name__ == '__main__':
