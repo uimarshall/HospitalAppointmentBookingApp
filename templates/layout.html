@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>EBONY HOSPITALS</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='custom.css')}}">
   </head>
@@ -13,12 +14,40 @@
     <!-- <div class="container"> -->
       <!-- the flash message should be after the navbar -->
       {% include 'includes/_messages.html' %}
+
       {% block body %}{% endblock %}
 
     <!-- </div> -->
 
+    <!-- footer starts here -->
+      <footer class="">
+        <div class="row">
+          <div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2">
+            <h3>Ebony Hospitals</h3>
+            <ul class="nav navbar-nav contact">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/bookingdetails">Booking Details</a></li>
+              <li><a href="/bookings">Bookings</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="row" id="newsletter">
+          <div class="col-md-5 col-sm-5 col-md-offset-1 col-sm-offset-1">
+            <button class="btn btn-block">Sign up to our newsletter</button>
+          </div>
+          <div class="col-md-5 col-sm-5">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nemo quis aut nihil, dolores veniam suscipit</p>
+          </div>
+        </div>
+
+      </footer>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+
 
     </script>
   </body>

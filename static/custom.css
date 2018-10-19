@@ -1,6 +1,7 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
+  padding-bottom: 0;
 }
 
 ul.nav, .jumbotron h1 {
@@ -9,24 +10,20 @@ ul.nav, .jumbotron h1 {
 }
 
 ul.nav {
-	font-size: 16px;
+	font-size: 19px;
 }
 
-footer {
-	background-color: #4C4C4C;
-	padding-top: 150px;
-	padding-bottom: 30px;
-  margin-bottom: 0;
-}
 
 #get-involved {
 	background-color: #f5f5f5;
+
 }
 
 .jumbotron {
 	text-align: center;
 	/* background-image: url(); */
 	color: black;
+  margin-bottom: 0;
 }
 
 .jumbotron h1 {
@@ -85,6 +82,59 @@ footer {
 	margin-top: 15px;
 }
 
+/* form */
+form{
+  margin-top: 4rem;
+}
+
+/* table */
+.row{
+  margin-top: 4rem;
+}
+
+/*footer*/
+footer{
+	background-color: #000000;
+	color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+footer a:hover {
+	color: #0C1F38 !important;
+	text-decoration: none;
+	opacity: .8;
+  border-radius: 5px;
+}
+footer ul.nav{
+  text-align: center;
+  padding-left: 95px;
+}
+footer h3{
+	text-align: center;
+}
+footer .row .nav li>a{
+	color: #ffffff;
+}
+footer .contact li{
+	border-right: 1px solid #ffffff;
+	text-decoration: none;
+	text-decoration-color: grey;
+}
+footer li:last-child{
+	border: none;
+}
+
+#newsletter{
+	border-top: 1px dotted #dddddd;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#newsletter .btn{
+	background-color: #ffffff;
+	color: #000000;
+	text-align: center;
+}
+
 /* Responsive Styling */
 
 @media (max-width: 1199px) {
@@ -130,10 +180,6 @@ footer {
 
 	.homepage p {
 		font-size: 18px;
-	}
-
-	footer img {
-		width: 80%;
 	}
 
 }

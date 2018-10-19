@@ -7,4 +7,29 @@
             <p>Thanks For Your Patronage</p>
         </div>
       </div>
+      <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <table class="table table-bordered table-hover">
+                <thead>
+                  <th>Name</th>
+                  <th>Booking Time</th>
+                  <th>Date of Birth</th>
+                  <th>Symptoms</th>
+                  <th>Date</th>
+                </thead>
+                {% for row in rows %}
+                  <tr>
+                    <td>{{row[0]}}</td>
+                    <td>{{row[1]}}</td>
+                    <td>{{row[2]}}</td>
+                    <td>{{row[3]}}</td>
+                    <td>{{row[4]}}</td>
+                  </tr>
+                {% endfor %}
+
+            </table>
+          </div>
+        </div>
+      </div>
     {% endblock %}
