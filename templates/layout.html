@@ -13,7 +13,9 @@
     <!-- wrap the body block in a container -->
     <!-- <div class="container"> -->
       <!-- the flash message should be after the navbar -->
-      {% include 'includes/_messages.html' %}
+      <div class="container" id="flashMessage">
+        {% include 'includes/_messages.html' %}
+      </div>
 
       {% block body %}{% endblock %}
 
@@ -35,7 +37,7 @@
         </div>
         <div class="row" id="newsletter">
           <div class="col-md-5 col-sm-5 col-md-offset-1 col-sm-offset-1">
-            <button class="btn btn-block">Sign up to our newsletter</button>
+            <button class="btn btn-block">Book in our state of the art facility habouring qualified Doctors</button>
           </div>
           <div class="col-md-5 col-sm-5">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nemo quis aut nihil, dolores veniam suscipit</p>

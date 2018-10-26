@@ -15,35 +15,28 @@ def about():
     return render_template('about.html')
 
 
-@app.route('/bookings')
+@app.route('/bookings', methods=['GET', 'POST'])
 def bookings():
+    if(request.method == 'POST'):
+
+        # $variable = $_POST['name_of_select'];
+        name = request.form['name']
+        mytime = request.form['mytime']
+        print(request.form)
+        mydate = request.form['mydate']
+        symptoms = request.form['symptoms']
+        conn = mariadb.connect(user='root', password='root', database='HospitalBookingDB')
+        cur = conn.cursor()
+        # $query = "INSERT INTO table (field) VALUES ($variable)";
+        sql = "INSERT INTO patientsbookings(name, booking_time, date_of_birth, symptoms) VALUES('{}', '{}', '{}', '{}')".format(
+            name, mytime, mydate, symptoms)
+        cur.execute(sql)
+        conn.commit()
+
+        flash('Thanks For Your Patronage, Check Your Booking Details Below', 'success')
+        return redirect(url_for('bookingdetails'))
 
     return render_template('bookings.html')
-
-
-@app.route('/act', methods=['GET', 'POST'])
-def act():
-
-    if(request.method == 'POST'):
-        try:
-            # $variable = $_POST['name_of_select'];
-            name = request.form['name']
-            mytime = request.form['mytime']
-            print(request.form)
-            mydate = request.form['mydate']
-            symptoms = request.form['symptoms']
-            conn = mariadb.connect(user='root', password='root', database='hospitalbookingdb')
-            cur = conn.cursor()
-            # $query = "INSERT INTO table (field) VALUES ($variable)";
-            sql = "INSERT INTO patientsbookings(name, booking_time, date_of_birth, symptoms) VALUES('{}', '{}', '{}', '{}')".format(
-                name, mytime, mydate, symptoms)
-            cur.execute(sql)
-            conn.commit()
-            msg = "Thanks for Booking Your Data Has Been Stored"
-            return render_template('status.html', msg=msg)
-        except Exception as e:
-
-            return "Database connection error", print(e)
 
 
 @app.route('/bookingdetails')
@@ -61,4 +54,5 @@ def bookingdetails():
 
 
 if __name__ == '__main__':
+    app.secret_key = 'secret123hack'
     app.run(debug=True)

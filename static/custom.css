@@ -4,8 +4,18 @@ body {
   padding-bottom: 0;
 }
 
+.navbar-fixed-top {
+    margin-bottom: 30px;
+}
+
+#flashMessage{
+  text-align: center;
+  font-size: 2rems;
+  font-weight: 100;
+}
+
 ul.nav, .jumbotron h1 {
-	font-family: 'Arvo', courier, serif;
+  font-family: 'Arvo', courier, serif;
   font-weight: 400;
 }
 
@@ -23,7 +33,7 @@ ul.nav {
 	text-align: center;
 	/* background-image: url(); */
 	color: black;
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .jumbotron h1 {
@@ -96,14 +106,14 @@ form{
 footer{
 	background-color: #000000;
 	color: #ffffff;
-  margin-top: 30px;
-  margin-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 footer a:hover {
 	color: #0C1F38 !important;
 	text-decoration: none;
 	opacity: .8;
-  border-radius: 5px;
+    border-radius: 5px;
 }
 footer ul.nav{
   text-align: center;
